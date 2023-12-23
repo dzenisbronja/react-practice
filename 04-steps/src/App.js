@@ -7,9 +7,20 @@ const messages = [
 ];
 
 export default function App() {
+  return (
+    <div>
+      <Steps />
+      <Steps />
+    </div>
+  );
+}
+
+function Steps() {
   const [step, setStep] = useState(1);
   // const [test, setTest] = useState({ name: "Jonas" });
   const [isOpen, setIsOpen] = useState(true);
+
+  console.log("ks");
 
   function handlePrevious() {
     if (step > 1) setStep((currStep) => currStep - 1);
@@ -27,7 +38,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <div>
       <button
         className="close"
         onClick={() => {
@@ -66,6 +77,6 @@ export default function App() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
