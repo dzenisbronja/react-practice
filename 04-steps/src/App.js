@@ -20,8 +20,6 @@ function Steps() {
   // const [test, setTest] = useState({ name: "Jonas" });
   const [isOpen, setIsOpen] = useState(true);
 
-  console.log("ks");
-
   function handlePrevious() {
     if (step > 1) setStep((currStep) => currStep - 1);
   }
