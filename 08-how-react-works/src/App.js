@@ -69,7 +69,6 @@ function TabContent({ item }) {
   const [likes, setLikes] = useState(0);
 
   console.log("RENDER");
-  console.log("render");
 
   function handleInc() {
     setLikes((likes) => likes + 1);
