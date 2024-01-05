@@ -87,7 +87,7 @@ function TabContent({ item }) {
     // handleInc();
     // handleInc();
   }
-
+  console.log("dlsak;");
   function handleUndo() {
     setShowDetails(true);
     setLikes(0);
