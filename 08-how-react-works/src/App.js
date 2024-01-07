@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+console.log("d");
 const content = [
   {
     summary: "React is a library for building UIs",
