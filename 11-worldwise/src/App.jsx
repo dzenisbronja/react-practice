@@ -12,6 +12,8 @@ import City from "./components/City";
 import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 
+console.log("test");
+
 function App() {
   return (
     <CitiesProvider>
