@@ -9,7 +9,7 @@ function createRandomPost() {
     body: faker.hacker.phrase(),
   };
 }
-
+console.log("l");
 function App() {
   // Whenever `isFakeDark` changes, we toggle the `fake-dark-mode` class on the HTML element (see in "Elements" dev tool).
   const [isFakeDark, setIsFakeDark] = useState(false);
