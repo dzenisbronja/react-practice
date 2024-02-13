@@ -41,6 +41,8 @@ const cartSlice = createSlice({
       item.quantity--;
 
       item.totalPrice = item.quantity * item.unitPrice;
+
+      if (item.quantity === 0) cartSlice.caseReducers.deleteItem(state, action);
     },
     clearCart(state) {
       state.cart = [];
@@ -68,3 +70,6 @@ export const getTotalCartPrice = (state) =>
 
 // 'reselect' library to avoid performance issue
 // in large applications by not centrelizing these get functions
+
+export const getCurrentQuantityById = (id) => (state) =>
+  state.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;
