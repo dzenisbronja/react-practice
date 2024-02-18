@@ -16,13 +16,13 @@ export default defineConfig({
     react(),
     eslintPlugin({
       // Konfiguracija ESLint-a
-      cache: false, // Onemogućiti kesiranje za sprečavanje problema sa ažuriranjem
-      fix: true, // Popraviti automatski ispravljive greške
-      extensions: [".js", ".jsx"], // Ekstenzije fajlova koje ESLint treba da analizira
-      exclude: ["node_modules", ".git"], // Direktorijumi koje ESLint treba da izuzme iz analize
+      cache: false,
+      fix: true,
+      extensions: [".js", ".jsx"],
+      exclude: ["node_modules", ".git"],
       overrideConfig: {
         rules: {
-          "no-unused-vars": "off", // Isključuje greške za neiskorišćene promenljive
+          "no-unused-vars": "off",
         },
       },
     }),

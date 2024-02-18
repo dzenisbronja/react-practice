@@ -22,7 +22,7 @@ export default defineConfig({
       overrideConfig: {
         rules: {
           "no-unused-vars": "off",
-          "no-constant-condition": "off", // Isključuje pravilo za konstantni uslov
+          "no-constant-condition": "off",
         },
       },
     }),
