@@ -9,6 +9,7 @@ import { useDeleteCabin } from "./useDeleteCabin";
 import { useCreateCabin } from "./useCreateCabin";
 import Modal from "../../ui/Modal";
 import Table from "../../ui/Table";
+import Menus from "../../ui/Menus";
 
 // const TableRow = styled.div`
 //   display: grid;
@@ -113,6 +114,8 @@ function CabinRow({ cabin }) {
             />
           </Modal.Window>
         </Modal>
+
+        <Menus.Menu></Menus.Menu>
       </div>
     </Table.Row>
   );
