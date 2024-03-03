@@ -17,17 +17,16 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   // 3.
   const checkins = confirmedStays.length;
 
-  //4.
+  // 4.
   const occupation =
     confirmedStays.reduce((acc, cur) => acc + cur.numNights, 0) /
     (numDays * cabinCount);
-  // num checked in nights / all available nights
-  // (num days * num cabins)
+  // num checked in nights / all available nights (num days * num cabins)
 
   return (
     <>
       <Stat
-        title="bookings"
+        title="Bookings"
         color="blue"
         icon={<HiOutlineBriefcase />}
         value={numBookings}
